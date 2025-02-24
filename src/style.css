@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  overflow-x: hidden;
+  font-family: var(--font-primary);
+  margin: 0;
+  width: 100%;
+}
+body{
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+:root{
+  --primary-color: #9ec91e;
+  --font-primary: 'Press Start 2P', cursive;
+  --secondary-color: #000000;
+  --brown-color: #F2C244;
+}
+.game-display{
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  background-color: var(--primary-color);
+  height: 100vh;
+  margin: 0 21.5rem;
+  width: 49.7%;
+  flex-wrap: wrap;
+}
+.game-header{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  margin-left: 0;
+  position: absolute;
+}
+.gameResult{
+  margin-left: 11rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#computerScore{
+  margin-right: .7rem;
+}
+
+.player-identity{
+  position: absolute;
+  margin-top: 4.2rem;
+}
+.player-computer{
+  font-size: 1rem;
+  font-weight: 300;
+}
+.player-emoji{
+  background-color: var(--primary-color);
+  border: .15rem dashed var(--secondary-color);
+  top: 6rem;
+  margin-right: .5rem;
+  position: absolute;
+}
+
+.computerChoice{
+  font-size: 6rem;
+}
+.result{
+  height: 3.5rem;
+  background-color: var(--brown-color);
+  position: absolute;
+  width: 49.7%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  top: 15.4rem;
+  font-size: 1.2rem;
+}
+
+.humanChoice{
+  font-size: 6rem;
+}
+.player-human{
+  font-size: 1rem;
+  font-weight: 300;
+}
+.player-choice{
+  position: absolute;
+  margin-top: 20.2rem;
+}
+.players-emoji{
+  background-color: var(--primary-color);
+  border: .15rem dashed var(--secondary-color);
+  margin-top: 21.8rem;
+  margin-right: .5rem;
+  position: absolute;
+}
+#choices{
+  position: absolute;
+  bottom: 1rem;
+  padding-top: 2.1rem;
+  height: 10rem;
+}
+.emojis{
+  font-size: 4rem;
+  opacity: .9;
+}
+.emojis.active{
+  opacity: 1;
+}
+.emojis-caption{
+  font-size: .9rem;
+  font-family: var(--font-primary);
+}
+button{
+  border-radius: .5rem;
+  padding-right: .2rem;
+  padding-left: .2rem;
+  padding-bottom: .2rem;
+  border: none;
+}
+/* Responsiveness */
+@media screen and (max-width: 84.375em){
+  .game-display{
+    width: 100%;
+    margin: 0;
+  }
+  .result{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 42.125em){
+  .game-header{
+    font-size: 0.5rem;
+  }
+  .gameResult{
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./src/images/ps4.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel ="stylesheet" href="./src/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="game-display">
+
+      <div class="game-header">
+        <p>&copy; 2025 <a href="#" rel="noopener noreferrer" target="_blank">Pascal Juma</a></p>
+        <div class="gameResult">
+          <div class="gameScore">computer 
+            <span id="computerScore">0</span>
+          </div>
+          <div class="game-score">
+            <span id="playerScore">0</span> player
+          </div>
+        </div>
+      </div>
+
+        <div class="player-identity">
+          <h1 class="player-computer">Computer</h1>
+        </div>
+        <div class="player-emoji">
+          <span class=computerChoice>
+            ✊
+          </span>
+        </div>
+
+        <div class="result">
+          Currently Draw
+        </div>
+
+        <div class="player-choice">
+          <h1 class="player-human">Player</h1>
+        </div>
+        <div class="players-emoji">
+          <span class=humanChoice>
+            ✊
+          </span>
+        </div>
+
+      <div id="choices">
+        <button type="button"><span class="emojis">✊</span><p class="emojis-caption">Rock</p></button>
+        <button type="button"><span class="emojis">✋</span><p class="emojis-caption">Paper</p></button>
+        <button type="button"><span class="emojis">✌️</span><p class="emojis-caption">Scissors</p></button>
+      </div>
+
+    </section>
+    <script src="./src/script.js" defer></script>
+  </body>
+</html>
