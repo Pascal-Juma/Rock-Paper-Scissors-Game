@@ -79,4 +79,4 @@ Retrieves the selected emoji from the clicked element.
 Updates humanChoice.textContent, displaying the player’s selection in the UI.
 
 ## 🎥 Demo
-🔗 **Live Preview:** [🎮Rock, Paper, Scissors Game](https://rock-paper-scissors-game-pink-three.vercel.app/)
+🔗 **Live Preview:** [🎮Rock, Paper, Scissors Game](https://pascal-juma.github.io/Rock-Paper-Scissors-Game/)
